@@ -31,7 +31,7 @@ public class List_Fragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        View root =  inflater.inflate(R.layout.fragment_list_, container, false);
+        View root =  inflater.inflate(R.layout.fragment_list, container, false);
         recyclerView = root.findViewById(R.id.recyclerView);
         recyclerView.setAdapter(new ClothesAdapter(getContext(), list));
         return root;

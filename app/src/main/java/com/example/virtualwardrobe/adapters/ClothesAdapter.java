@@ -23,12 +23,12 @@ public class ClothesAdapter extends RecyclerView.Adapter {
         public MyHolderView(@NonNull View itemView) {
             super(itemView);
             item = itemView.findViewById(R.id.editTextTextPersonName2);
-            description = itemView.findViewById(R.id.textView5);
+            link = itemView.findViewById(R.id.textView5);
             photo = itemView.findViewById(R.id.imageView3);
             type = itemView.findViewById(R.id.type);
         }
         EditText item;
-        TextView description;
+        TextView link;
         ImageView photo;
         EditText type;
 
@@ -52,7 +52,7 @@ public class ClothesAdapter extends RecyclerView.Adapter {
         MyHolderView view = (MyHolderView) holder;
         // view.photo(list.get(position).);
         view.item.setText(list.get(position).name);
-        view.description.setText(list.get(position).description);
+        view.link.setText(list.get(position).link);
         view.type.setText(list.get(position).category);
 
 
